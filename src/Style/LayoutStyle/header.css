@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerLogo {
+    width: 210px;
+    height: 68px;
+    padding: 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+    width: 250px;
+    height: 34px;
+}
+
+.navLink {
+    font-size: 12px;
+    color: #FF6060;
+    text-decoration: none;
+}

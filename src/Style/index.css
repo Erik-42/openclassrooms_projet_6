@@ -1,0 +1,13 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  margin: 20px;
+  margin-bottom: 0;
+}
