@@ -1,7 +1,7 @@
-.locationName {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+.thumb {
+    background: linear-gradient(180deg, rgba(255, 96, 96) 0%, rgba(0, 0, 0, 0.8) 100%);
     color: white;
-    padding: 2px 10px;
     border-radius: 10px;
-    width: fit-content;
+    width: 340px;
+    height: 340px;
 }

@@ -11,16 +11,17 @@ header {
 }
 
 
-nav {
+/* nav {
     display: flex;
     justify-content: space-evenly;
     font-size: 24px;
     width: 250px;
     height: 34px;
-}
+} */
 
+/* 
 .navLink {
     font-size: 12px;
     color: #FF6060;
     text-decoration: none;
-}
+} */

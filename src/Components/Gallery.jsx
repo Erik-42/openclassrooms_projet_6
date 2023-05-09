@@ -1,10 +1,10 @@
 import React from 'react'
 import "../Style/ComponentsStyle/gallery.css"
 
-export default function Gallery(photo) {
+export default function Gallery() {
     return (
         <div className="Gallery">
-            {photo}
+            {Gallery}
         </div>
     )
 }

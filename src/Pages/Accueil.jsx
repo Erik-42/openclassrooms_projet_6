@@ -1,16 +1,15 @@
 import React from 'react'
-import Tag from '../Components/Tag.jsx'
 import Thumb from '../Components/Thumb.jsx'
-
-
+import Bannieres from "../assets/Bannieres/bannerAccueilXL.png"
 
 export default function Accueil() {
     return (
-        <div>
-            <h1>Home</h1>
-            <Tag name="tag-name" />
-            <Thumb name="Titre de la location" />
-            <h2>c'est pas simple</h2>
-        </div>
+        <main>
+            <div id="titreBanniereAccueil" >
+                <img id="headerLogo" src={Bannieres} alt="Bannière accueil" />
+                <h1 id="title-home">Chez vous, partout et ailleurs</h1>
+            </div>
+            <Thumb />
+        </main>
     )
 }
