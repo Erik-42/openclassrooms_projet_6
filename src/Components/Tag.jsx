@@ -3,7 +3,7 @@ import "../Style/ComponentsStyle/tag.css"
 
 export default function Tag({ tagName }) {
     return (
-        <div className="Tag">
+        <div className="tag">
             {tagName}
         </div>
     )
