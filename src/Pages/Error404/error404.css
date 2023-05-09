@@ -1,18 +1,23 @@
 #error404 {
-
     font-size: 288px;
     font-weight: 700;
+    line-height: 410px;
     color: #FF6060;
+    margin: 0;
 }
 
 #textError {
     font-size: 36px;
+    line-height: 51px;
     color: #FF6060;
-    padding: 0px 0px 150px;
 }
 
 #errorLink {
     font-size: 18px;
+    line-height: 25px;
     color: #FF6060;
-    margin: 150px
+}
+
+#errorLink :hover {
+    text-decoration: underline;
 }

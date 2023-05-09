@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "../Style/LayoutStyle/header.css"
-import Logo from "../assets/Logo/LOGO-1.png"
+import "./header.css"
+import Logo from "../assets/logo/logoRedKasa.png"
 
-export default function Header() {
+const Header = () => {
     return (
         <header>
             <Link to="/">
@@ -17,3 +17,4 @@ export default function Header() {
         </header>
     )
 }
+export default Header;

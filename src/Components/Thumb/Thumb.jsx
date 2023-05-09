@@ -1,10 +1,11 @@
 import React from 'react'
-import "../Style/ComponentsStyle/thumb.css"
+import "./thumb.css"
 
-export default function Thumb({ locationName }) {
+const Thumb = ({ locationName }) => {
     return (
         <div className="Thumb">
             {locationName}
         </div>
     )
 }
+export default Thumb;
