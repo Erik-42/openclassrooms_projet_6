@@ -10,7 +10,6 @@ export default function Accueil() {
             <h1>Home</h1>
             <Tag name="tag-name" />
             <Thumb name="Titre de la location" />
-            <h2>c'est pas simple</h2>
         </div>
     )
 }
