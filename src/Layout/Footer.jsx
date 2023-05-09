@@ -9,7 +9,7 @@ export default function Footer() {
             <Link to="/">
                 <img id="footerLogo" src={Logo} alt="Logo Kasa" />
             </Link>
-            <p>©2020 Kasa. All rights reserved</p>
+            <p id="copyright"> ©2020 Kasa. All rights reserved </p>
         </div>
     )
 }

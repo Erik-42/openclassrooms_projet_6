@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import "../Style/LayoutStyle/header.css"
 import Logo from "../assets/Logo/LOGO-1.png"
 
@@ -10,8 +10,8 @@ export default function Header() {
                 <img id="headerLogo" src={Logo} alt="Logo Kasa" />
             </Link>
             <nav>
-                <Link className="navLink" to="/">Accueil</Link>
-                <Link className="navLink" to="/Apropos">A Propos</Link>
+                <NavLink className="navLink" to="/">Accueil</NavLink>
+                <NavLink className="navLink" to="/Apropos">A Propos</NavLink>
 
             </nav>
         </header>
