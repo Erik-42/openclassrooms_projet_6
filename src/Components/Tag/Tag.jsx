@@ -1,10 +1,11 @@
 import React from 'react'
-import "../Style/ComponentsStyle/tag.css"
+import "./tag.css"
 
-export default function Tag({ tagName }) {
+const Tag = ({ tagName }) => {
     return (
         <div className="Tag">
             {tagName}
         </div>
     )
 }
+export default Tag;

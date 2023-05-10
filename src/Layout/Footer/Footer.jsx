@@ -1,9 +1,9 @@
 import React from 'react'
-import "../Style/LayoutStyle/footer.css"
 import { Link } from 'react-router-dom'
-import Logo from "../assets/Logo/LOGO.png"
+import "./footer.css"
+import Logo from "../../assets/logo/logoWhiteKasa.png"
 
-export default function Footer() {
+const Footer = () => {
     return (
         <div className="footer">
             <Link to="/">
@@ -13,3 +13,5 @@ export default function Footer() {
         </div>
     )
 }
+
+export default Footer;
