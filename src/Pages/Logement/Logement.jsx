@@ -1,9 +1,9 @@
 import React from 'react'
-import Gallery from '../Components/Gallery/Gallery.jsx'
-import Tag from '../Components/Tag/Tag.jsx'
-import User from '../Components/User/User.jsx'
-import Rate from '../Components/Rate/Rate.jsx'
-import Collapse from '../Components/Collapse/Collapse.jsx'
+import Gallery from '../../Components/Gallery/Gallery.jsx'
+import Tag from '../../Components/Tag/Tag.jsx'
+import User from '../../Components/User/User.jsx'
+import Rate from '../../Components/Rate/Rate.jsx'
+import Collapse from '../../Components/Collapse/Collapse.jsx'
 import "./logement.css"
 
 const Logement = () => {
