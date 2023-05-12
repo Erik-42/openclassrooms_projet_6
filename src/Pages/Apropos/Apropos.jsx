@@ -7,6 +7,7 @@ import bannerAbout from '../../assets/banner/bannerAbout.webp'
 const Apropos = () => {
     return (
         <div>
+            <h1>A Propos</h1>
             <Link to="/">
                 <img id="bannerAbout" src={bannerAbout} alt="Bannière accueil" />
             </Link>
