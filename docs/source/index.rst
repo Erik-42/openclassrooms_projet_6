@@ -49,8 +49,9 @@ Install $project by running:
 Contribute
 ----------
 
-- Issue Tracker: github.com/Erik-42/openclassrooms_projet_6/issues
+- Issue Tracker: https://github.com/Erik-42/openclassrooms_projet_6/issues/2#issue-1707197002
 - Source Code: https://github.com/Erik-42/openclassrooms_projet_6.git
+- Publication: https://erik-42.github.io/openclassrooms_projet_6/public/
 
 Support
 -------
