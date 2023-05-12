@@ -1,10 +1,10 @@
 import React from 'react'
 import "./collapse.css"
 
-const Collapse = (Infos) => {
+const Collapse = ({ name }) => {
     return (
         <div className="collapse">
-            {Infos}
+            {name}
         </div>
     )
 }
