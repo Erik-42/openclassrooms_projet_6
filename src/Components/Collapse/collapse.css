@@ -1,4 +1,17 @@
 .collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 13px 20px 13px 18px;
     background: #FF6060;
+    color: white;
     border-radius: 10px;
+    width: 400px;
+    /* height: 52px; */
+}
+
+.affichage {
+    display: flex;
+    justify-content: space-around;
 }

@@ -1,37 +1,45 @@
-import React from 'react'
-//import Gallery from '../../Components/Gallery/Gallery.jsx'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
+import Gallery from '../../Components/Gallery/Gallery.jsx'
 import Tag from '../../Components/Tag/Tag.jsx'
 import User from '../../Components/User/User.jsx'
 import Rate from '../../Components/Rate/Rate.jsx'
 import Collapse from '../../Components/Collapse/Collapse.jsx'
 import "./logement.css"
-import { useParams } from 'react-router-dom'
-
-// function Logement() {
-//     //récupération des data
-//     const data = require("../../assets/data/logements.json")
-//     //sélection du logement par ID
-//     function idLogement(data, logementId) {
-//         for (let logement of data) { if (logement.id === logementId)} return logement
-//     }
-// }
-// const { logementId } = useParams()
-// const logement = idLogement(data, logementId)
-
-// const dataJson = await fetch("../../assets/data/logements.json")
-// const logement = await dataJson.json
 
 const Logement = () => {
+    const params = useParams()
+    const [dataLogement, setDataLogement] = useState([]);
+
+    useEffect(() => {
+        const getData = async () => {
+            //axios permet de prévoir la futur API
+            const res = await axios.get("../assets/data/logements.json");
+            const appart = res.dataLogement.find(({ id }) => id === params.id);
+            res.dataLogement.map(() => setDataLogement(appart));
+        };
+        getData()
+    }, []);
+
+    // useEffect(() => {
+    //     axios
+    //         .get("../assets/data/logements.json")
+    //         .then((res) => setDataLogement(res.dataLogement));
+    // }, []);
+
     return (
-        <div>
+        <div key={params.id} className='ficheLogement'>
             <h1>Logement</h1>
-            {/* <Gallery id="gallery" /> */}
-            <Tag />
+            <Gallery cover={dataLogement.cover} />
+            <Tag tagName={dataLogement.tags} />
             <User />
             <div id="votes">
-                <Rate rating={logement.rating} />
+                <h2>votes en étoiles</h2>
+                <Rate rating={dataLogement.rating} />
             </div>
-            <Collapse />
+            <Collapse description={dataLogement.description} />
+            <Collapse equipments={dataLogement.equipments} />
         </div>
     )
 }

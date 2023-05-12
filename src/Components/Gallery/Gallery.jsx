@@ -1,10 +1,11 @@
 import React from 'react'
 import "./gallery.css"
 
-const Gallery = (photo) => {
+const Gallery = (cover, pictures) => {
     return (
         <div className="gallery">
-            {photo}
+            {cover}
+            {pictures}
         </div>
     )
 }
