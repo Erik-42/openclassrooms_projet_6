@@ -1,7 +1,31 @@
-.locationName {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    color: white;
-    padding: 2px 10px;
+.thumb {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 340px;
+    height: 340px;
     border-radius: 10px;
-    width: fit-content;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    background-color: #FF6060;
+    color: white;
+    margin: 50px;
+}
+
+#coverImage {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cadreCard {
+    display: flex;
+    width: 50%;
+    text-align: left;
+}
+
+.locationName {
+    display: flex;
+    position: relative;
+    margin: 20px;
 }

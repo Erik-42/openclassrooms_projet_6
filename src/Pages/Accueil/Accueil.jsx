@@ -6,13 +6,21 @@ import "./accueil.css"
 
 const Accueil = () => {
     return (
-        <div>
-            <Link to="/">
-                <img id="bannerHome" src={bannerHome} alt="Bannière accueil" />
-            </Link>
-            <h1>Chez vous,partout et ailleurs</h1>
-            <Thumb name="Titre de la location" />
-        </div>
+        <main>
+            <div id="bannerHome">
+                <img className='banner' src={bannerHome} alt="Bannière accueil - Chez vous,partout et ailleurs" />
+                <h1 id='titleBanner'>Chez vous,partout et ailleurs</h1>
+            </div>
+            <div className='greySquare'>
+                <Thumb name="Titre de la location" />
+                <Thumb name="Titre de la location" />
+                <Thumb name="Titre de la location" />
+                <Thumb name="Titre de la location" />
+                <Thumb name="Titre de la location" />
+                <Thumb name="Titre de la location" />
+
+            </div>
+        </main>
     )
 }
 export default Accueil;
