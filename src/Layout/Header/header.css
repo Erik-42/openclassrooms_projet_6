@@ -12,15 +12,12 @@ header {
 
 
 nav {
-    display: flex;
-    justify-content: space-evenly;
     font-size: 24px;
-    width: 250px;
-    height: 34px;
+    line-height: 34.22px;
 }
 
 .navLink {
-    font-size: 12px;
     color: #FF6060;
     text-decoration: none;
+    padding: 5px;
 }

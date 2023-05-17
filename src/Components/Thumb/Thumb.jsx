@@ -1,14 +1,35 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import axios from 'axios';
 import "./thumb.css"
-import cover from "../../assets/data/logements.json";
+import Logements from "../../assets/data/logements.json"
 
-const Thumb = ({ Title }) => {
+const Thumb = () => {
+    //state (état et données)
+    const [dataLogement, setDataLogement] = useState([])
+
+    //Comportements
+    useEffect(() => {
+        //requete axios en prevision de l'API
+        axios
+            .get(Logements)
+            .then((response) => {
+                setDataLogement(response.data)
+            });
+    }, []);
+
+    console.log(Logements)
+
+    //affichage (render)
     return (
         <article className="thumb">
-            <img id='coverImage' src={cover} alt="Image de la location" />
-            <div className='cadreCard'>
-                <p className='locationName'>Titre de la location {Title}</p>
-            </div>
+            {dataLogement.map((logement) => (
+                <div className='cadreCard' key={logement.id}>
+                    <Link to={`/Logement/${logement.id}`}>
+                        <img key={"cover" + logement.id} src={logement.cover} id='coverImage' alt={logement.title} />
+                        <h2 key={"title" + logement.id} className='locationName'>Titre de la location {logement.title}</h2>
+                    </Link>
+                </div>))}
         </article>
     )
 }

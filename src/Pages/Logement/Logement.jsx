@@ -7,27 +7,25 @@ import User from '../../Components/User/User.jsx'
 import Rate from '../../Components/Rate/Rate.jsx'
 import Collapse from '../../Components/Collapse/Collapse.jsx'
 import "./logement.css"
+import Logements from "../../assets/data/logements.json"
 
 const Logement = () => {
     const params = useParams()
-    const [dataLogement, setDataLogement] = useState([]);
 
+    //state (état et données)
+    const [dataLogement, setDataLogement] = useState([])
+
+    //Comportements
     useEffect(() => {
-        const getData = async () => {
-            //axios permet de prévoir la futur API
-            const res = await axios.get("../assets/data/logements.json");
-            const appart = res.dataLogement.find(({ id }) => id === params.id);
-            res.dataLogement.map(() => setDataLogement(appart));
-        };
-        getData()
+        //axios permet de prévoir la futur API
+        axios
+            .get(Logements)
+            .then((response) => {
+                setDataLogement(response.data)
+            });
     }, []);
 
-    // useEffect(() => {
-    //     axios
-    //         .get("../assets/data/logements.json")
-    //         .then((res) => setDataLogement(res.dataLogement));
-    // }, []);
-
+    //affichage (render)
     return (
         <div key={params.id} className='ficheLogement'>
             <h1>Logement</h1>

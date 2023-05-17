@@ -4,7 +4,12 @@ import redstar from "../../assets/logo/logoRedKasa.png"
 import greystar from "../../assets/logo/logoWhiteKasa.png"
 
 const Rate = ({ rating }) => {
+    //state (état et données)
     const stars = [1, 2, 3, 4, 5];
+
+    //Comportements
+
+    //affichage (render)
     return (
         <div className='votes'>
             {stars.map((level) => rating >= level ?

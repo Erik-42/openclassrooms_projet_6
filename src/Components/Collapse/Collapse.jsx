@@ -1,27 +1,34 @@
 import React, { useEffect, useRef, useState } from 'react'
-import vectorWhite from '../../assets/logo/vectorWhite.png'
+import vectorWhiteDown from '../../assets/logo/vectorWhiteDown.png'
 import "./collapse.css"
 
-const Collapse = ({ description, equipments }) => {
+const Collapse = (props) => {
+    //state (état et données)
     const [toggle, setToggle] = useState(false);
     const [heightElement, setHeightElement] = useState();
-    const toggleState = () => {
+    const content = useRef(null);
+    const toggleCollapse = () => {
         setToggle(!toggle);
-    };
-    const refHeight = useRef();
+    }
 
+    //Comportements
     useEffect(() => {
-        // setHeightElement(`${refHeight.current.scrollHeight}px`);
+        setHeightElement(`${content.current.scrollHeight}px`);
     }, []);
 
+    //affichage (render)
     return (
-        <div className='affichage'>
-            <span className="collapse">
-                <h3>Collapse</h3>
-                <img src={vectorWhite} alt="Déployer / Réduire" />
-                {description}
-            </span>
-        </div>
+        <section className='barreAffichage' >
+            <div className="collapse" onClick={toggleCollapse}>
+                <div className="titreCollapse">{props.title}</div>
+                <img className={toggle ? "vector rotation" : "vector"} src={vectorWhiteDown} alt="Déployer / Réduire" />
+            </div>
+            <div className={toggle ? "collapseToggle animated" : "collapseToggle"} ref={content} style={{ height: toggle ? `${heightElement}` : "0px" }}>
+                <p aria-hidden={toggle ? "true" : "false"}>
+                    {props.content}</p>
+
+            </div>
+        </section>
 
     )
 }
