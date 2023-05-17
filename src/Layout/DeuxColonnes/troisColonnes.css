@@ -1,6 +1,6 @@
-.thumb {
+.troisColonnes {
     position: relative;
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-content: space-between;
     width: 340px;
@@ -10,22 +10,4 @@
     background-color: #FF6060;
     color: white;
     margin: 50px;
-}
-
-#coverImage {
-    display: flex;
-    width: 100%;
-    object-fit: cover;
-}
-
-.cadreCard {
-    display: flex;
-    width: 50%;
-    text-align: left;
-}
-
-.locationName {
-    display: flex;
-    position: relative;
-    margin: 20px;
 }

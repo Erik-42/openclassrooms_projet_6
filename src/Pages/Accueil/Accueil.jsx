@@ -1,12 +1,12 @@
 import React from 'react'
-import Thumb from '../../Components/Thumb/Thumb.jsx'
+import useAccueil from "../../Hooks/useAccueil.js"
 import bannerHome from '../../assets/banner/bannerHome.webp'
 import "./accueil.css"
+import TroisColonnes from '../../Layout/TroisColonnes/TroisColonnes.jsx'
+import Card from '../../Components/Card/Card.jsx'
 
 const Accueil = () => {
-    //state (état et données)
-
-    //Comportements
+    const dataLogement = useAccueil()
 
     //affichage (render)
     return (
@@ -18,7 +18,12 @@ const Accueil = () => {
             </div>
             <div className='greySquare'>
                 {/* affichage des Thumb dans le cadre gris */}
-                <Thumb></Thumb>
+                <TroisColonnes>
+                    {dataLogement.map((logement) => (
+                        <Card logement={logement}></Card>
+                    ))
+                    }
+                </TroisColonnes>
             </div>
         </main >
     )
