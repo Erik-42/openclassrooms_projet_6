@@ -4,6 +4,11 @@ import "./header.css"
 import Logo from "../../assets/logo/logoRedKasa.png"
 
 const Header = () => {
+    //state (état et données)
+
+    //Comportements
+
+    //affichage (render)
     return (
         <header>
             <Link to="/">
@@ -17,4 +22,5 @@ const Header = () => {
         </header>
     )
 }
+
 export default Header;

@@ -1,18 +1,32 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import Thumb from '../../Components/Thumb/Thumb.jsx'
+import useAccueil from "../../Hooks/useAccueil.js"
 import bannerHome from '../../assets/banner/bannerHome.webp'
 import "./accueil.css"
+import TroisColonnes from '../../Layout/TroisColonnes/TroisColonnes.jsx'
+import Card from '../../Components/Card/Card.jsx'
 
 const Accueil = () => {
+    const dataLogement = useAccueil()
+
+    //affichage (render)
     return (
-        <div>
-            <Link to="/">
-                <img id="bannerHome" src={bannerHome} alt="Bannière accueil" />
-            </Link>
-            <h1>Chez vous,partout et ailleurs</h1>
-            <Thumb name="Titre de la location" />
-        </div>
+        <main>
+            {/* affichage de la bannière */}
+            <div id="bannerHome">
+                <img className='banner' src={bannerHome} alt="Bannière accueil - Chez vous,partout et ailleurs" />
+                <h1 id='titleBanner'>Chez vous,partout et ailleurs</h1>
+            </div>
+            <div className='greySquare'>
+                {/* affichage des Thumb dans le cadre gris */}
+                <TroisColonnes>
+                    {dataLogement.map((logement) => (
+                        <Card logement={logement}></Card>
+                    ))
+                    }
+                </TroisColonnes>
+            </div>
+        </main >
     )
 }
+
 export default Accueil;

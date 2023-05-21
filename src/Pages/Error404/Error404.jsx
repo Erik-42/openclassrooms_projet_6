@@ -3,6 +3,11 @@ import { NavLink } from 'react-router-dom'
 import "./error404.css"
 
 const Error404 = () => {
+    //state (état et données)
+
+    //Comportements
+
+    //affichage (render)
     return (
         <main>
             <h1 id="error404">404</h1>

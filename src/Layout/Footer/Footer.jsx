@@ -4,6 +4,11 @@ import "./footer.css"
 import Logo from "../../assets/logo/logoWhiteKasa.png"
 
 const Footer = () => {
+    //state (état et données)
+
+    //Comportements
+
+    //affichage (render)
     return (
         <div className="footer">
             <Link to="/">

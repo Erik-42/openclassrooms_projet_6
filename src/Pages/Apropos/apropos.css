@@ -1,0 +1,15 @@
+#bannerAbout {
+    display: flex;
+    background: rgba(0, 0, 0, .8);
+    border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos {
+    margin: 1% 5% 1%;
+}
+
+.titleCollapse {
+    color: white;
+}
