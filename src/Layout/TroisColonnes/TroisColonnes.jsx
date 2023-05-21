@@ -1,9 +1,11 @@
 import React from 'react'
+import "./troisColonnes.css"
 
-export default function TroisColonnes({ children }) {
+function TroisColonnes({ children }) {
     return (
         <article className="troisColonnes">
             {children}
         </article >
     )
 }
+export default TroisColonnes

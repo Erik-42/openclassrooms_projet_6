@@ -7,12 +7,12 @@ const Card = ({ logement }) => {
     //affichage (render)
     return (
 
-        <div className='cadreCard' key={logement.id}>
+        <article className='cadreCard' key={logement.id}>
             <Link to={`/Logement/${logement.id}`}>
-                <img key={"cover" + logement.id} src={logement.cover} id='coverImage' alt={logement.title} />
-                <h2 key={"title" + logement.id} className='locationName'>{logement.title}</h2>
+                <img className='coverImage' key={"cover" + logement.id} src={logement.cover} id='coverImage' alt={logement.title} />
+                <h2 className='locationName' key={"title" + logement.id}>{logement.title}</h2>
             </Link>
-        </div>)
+        </article>)
 }
 
 export default Card;
