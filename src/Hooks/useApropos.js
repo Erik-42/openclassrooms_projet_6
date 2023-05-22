@@ -1,10 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-const Logements = "/data/logements.json"
+const Logements = "/data/aProposTexte.json"
 
 function useAccueil() {
     //state (état et données)
-    const [dataLogement, setDataLogement] = useState([])
+    const [data, setData] = useState([])
 
     //Comportements
     useEffect(() => {
@@ -12,10 +12,10 @@ function useAccueil() {
         axios
             .get(Logements)
             .then((response) => {
-                setDataLogement(response.data)
+                setData(response.data)
             });
     }, []);
 
-    return dataLogement
+    return data
 }
 export default useAccueil
