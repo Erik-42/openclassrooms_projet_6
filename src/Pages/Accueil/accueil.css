@@ -31,7 +31,6 @@ main {
     background: #F7F7F7;
     border-radius: 25px;
     margin: 40px 0;
-
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

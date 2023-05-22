@@ -18,7 +18,6 @@ const Apropos = () => {
             <div className='infos'>
                 {aProposTexte.map((element) => (
                     <Collapse className="titleCollapse" key={aProposTexte.id} aProposTitle={element.aProposTitle} aProposTexte={element.aProposText} ></Collapse>))}
-                <Collapse>Titre collapse</Collapse>
             </div>
         </div>
     )
