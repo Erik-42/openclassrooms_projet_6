@@ -1,9 +1,9 @@
 import React from 'react'
 import useLogements from "../../Hooks/useLogements.js"
 import bannerHome from '../../assets/banner/bannerHome.webp'
-import "./accueil.css"
-import TroisColonnes from '../../Layout/TroisColonnes/TroisColonnes.jsx'
 import Card from '../../Components/Card/Card.jsx'
+import TroisColonnes from '../../Layout/TroisColonnes/TroisColonnes.jsx'
+import "./accueil.css"
 
 const Accueil = () => {
     const dataLogement = useLogements()
@@ -20,7 +20,7 @@ const Accueil = () => {
                 {/* affichage des Thumb dans le cadre gris */}
                 <TroisColonnes>
                     {dataLogement.map((logement) => (
-                        <Card logement={logement}></Card>
+                        <Card data={logement}></Card>
                     ))
                     }
                 </TroisColonnes>

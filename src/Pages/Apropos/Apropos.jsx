@@ -1,25 +1,30 @@
 import React from 'react'
+import useApropos from '../../Hooks/useApropos.js';
+import bannerAbout from '../../assets/banner/bannerAbout.webp'
 import Collapse from '../../Components/Collapse/Collapse.jsx'
 import "./apropos.css"
-import bannerAbout from '../../assets/banner/bannerAbout.webp'
-import aProposTexte from "../../assets/data/aProposTexte.json";
+// import aProposTexte from "../../assets/data/aProposTexte.json";
 
 const Apropos = () => {
+    const texteApropos = useApropos()
     //state (état et données)
 
     //Comportements
 
     //affichage (render)
     return (
-        <div>
+        <main>
+            {/* affichage de la bannière */}
             <div id="bannerAbout">
                 <img className='banner' src={bannerAbout} alt="Bannière accueil" />
             </div>
-            <div className='infos'>
-                {aProposTexte.map((element) => (
-                    <Collapse className="titleCollapse" key={aProposTexte.id} aProposTitle={element.aProposTitle} aProposTexte={element.aProposText} ></Collapse>))}
+            <div className='infosApropos'>
+                {texteApropos.map((texte, title) => (
+                    <Collapse title={title.aProposTitle} textes={texte.aProposText} ></Collapse>
+                ))
+                }
             </div>
-        </div>
+        </main>
     )
 }
 export default Apropos;

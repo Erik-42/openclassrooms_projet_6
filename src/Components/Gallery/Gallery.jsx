@@ -10,8 +10,8 @@ const Gallery = ({ picture }) => {
     const firstPicture = picture[0] //1ere image
     const lastPicture = picture[nombrePictures - 1] //dernière image
     const [pictureActuelle, setPictureActuelle] = useState(firstPicture)
-    const pictureIndex = picture.indexOf(pictureActuelle) //image en cours d'affichage
-
+    const pictureIndex = (picture.findIndex(pictureActuelle => pictureActuelle)) //image en cours d'affichage
+    console.log(picture)
     //Comportements UseEffect
     const nextPicture = () => {
         if (pictureActuelle === lastPicture) { setPictureActuelle(firstPicture) } else { setPictureActuelle(picture[pictureIndex + 1]) }
@@ -36,4 +36,5 @@ const Gallery = ({ picture }) => {
         </div>
     )
 }
+
 export default Gallery;
