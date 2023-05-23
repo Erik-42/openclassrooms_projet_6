@@ -1,12 +1,12 @@
 import React from 'react'
-import useAccueil from "../../Hooks/useAccueil.js"
+import useLogements from "../../Hooks/useLogements.js"
 import bannerHome from '../../assets/banner/bannerHome.webp'
 import "./accueil.css"
 import TroisColonnes from '../../Layout/TroisColonnes/TroisColonnes.jsx'
 import Card from '../../Components/Card/Card.jsx'
 
 const Accueil = () => {
-    const dataLogement = useAccueil()
+    const dataLogement = useLogements()
 
     //affichage (render)
     return (

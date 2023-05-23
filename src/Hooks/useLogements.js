@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-const Logements = "/data/logements.json"
+const Datas = "/data/logements.json"
 
-function useAccueil() {
+function useLogement() {
     //state (état et données)
     const [data, setData] = useState([])
 
@@ -10,7 +10,7 @@ function useAccueil() {
     useEffect(() => {
         //requete axios en prevision de l'API
         axios
-            .get(Logements)
+            .get(Datas)
             .then((response) => {
                 setData(response.data)
             });
@@ -18,4 +18,5 @@ function useAccueil() {
 
     return data
 }
-export default useAccueil
+
+export default useLogement
