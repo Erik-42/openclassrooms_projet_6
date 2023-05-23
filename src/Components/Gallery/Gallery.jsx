@@ -1,35 +1,37 @@
 import React, { useState } from 'react'
 import vectorWhiteRight from '../../assets/logo/vectorWhiteRight.png'
 import vectorWhiteLeft from '../../assets/logo/vectorWhiteLeft.png'
-
 import "./gallery.css"
 
-const Gallery = ({ pictures }) => {
-    //state (état et données) UseState
-    const nombrePictures = pictures.length // nombre image dans galerie
-    const firstPicture = pictures[0] //1ere image
-    const lastPicture = pictures[nombrePictures - 1] //dernière image
-    const [pictureEnCours, setPictureEnCours] = useState(firstPicture)
-    const pictureId = pictures.indexOf(pictureEnCours) //image en cours d'affichage
+const Gallery = ({ picture }) => {
 
+    //state (état et données) UseState
+    const nombrePictures = picture.length // nombre image dans galerie
+    const firstPicture = picture[0] //1ere image
+    const lastPicture = picture[nombrePictures - 1] //dernière image
+    const [pictureActuelle, setPictureActuelle] = useState(firstPicture)
+    const pictureIndex = picture.indexOf(pictureActuelle) //image en cours d'affichage
+
+    //Comportements UseEffect
     const nextPicture = () => {
-        if (pictureEnCours === lastPicture) { setPictureEnCours(firstPicture) } else { setPictureEnCours(pictures[pictureId + 1]) }
+        if (pictureActuelle === lastPicture) { setPictureActuelle(firstPicture) } else { setPictureActuelle(picture[pictureIndex + 1]) }
     } // navigation image suivante
 
     const previousPicture = () => {
-        if (pictureEnCours === lastPicture) { setPictureEnCours(firstPicture) } else { setPictureEnCours(pictures[pictureId - 1]) }
+        if (pictureActuelle === firstPicture) { setPictureActuelle(lastPicture) } else { setPictureActuelle(picture[pictureIndex - 1]) }
     } // navigation image précédente
-
-    //Comportements UseEffect
 
     //affichage (render) return
     return (
-        <div className="gallery">
-            <img src={pictureEnCours} alt={pictureEnCours.title} />
+        <div className="gallery" key={picture.id}>
+
+            <img className='imageGallery' key={"cover" + picture.id} src={picture.cover} alt={picture.title} />
+
+            {/* <img className='imageGallery' key={"cover" + picture.id} src={firstPicture} alt={firstPicture.title} /> */}
             <div className='controlsGallery'>
-                <img src={vectorWhiteRight} alt="Next" onClick={() => nextPicture(pictureEnCours)} />
-                <img src={vectorWhiteLeft} alt="Previous" onClick={() => previousPicture(pictureEnCours)} />
-                <div className='indexGallery'>{pictureId}/{nombrePictures}</div>
+                <img className='nextVector' src={vectorWhiteRight} alt="Next" onClick={() => nextPicture(pictureActuelle)} />
+                <img className='previousVector' src={vectorWhiteLeft} alt="Previous" onClick={() => previousPicture(pictureActuelle)} />
+                <div className='indexGallery'>{pictureIndex}/{nombrePictures}</div>
             </div>
         </div>
     )

@@ -1,4 +1,4 @@
-.troisColonnes {
+.deuxColonnes {
     display: flex;
     flex-wrap: wrap;
 }
