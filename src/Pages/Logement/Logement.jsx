@@ -24,10 +24,10 @@ const Logement = () => {
                 <h2>votes en étoiles</h2>
                 <Rate />
             </div>
-            <DeuxColonnes>
+            <div className='infosLogement'>
                 <Collapse></Collapse>
                 <Collapse></Collapse>
-            </DeuxColonnes>
+            </div>
             {/* <div className='infos'>
                 {dataLogement.map((logement) => (
                     <Collapse className="titleCollapse" key={dataLogement.id} logementTitle={logement.logementTitle} logementDescription={logement.logementDescription} ></Collapse>))}

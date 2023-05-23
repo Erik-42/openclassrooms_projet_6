@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-const Textes = "/data/aProposTexte.json"
+const Datas = "/data/aProposTexte.json"
 
 function useApropos() {
     //state (état et données)
@@ -10,7 +10,7 @@ function useApropos() {
     useEffect(() => {
         //requete axios en prevision de l'API
         axios
-            .get(Textes)
+            .get(Datas)
             .then((response) => {
                 setData(response.data)
             });
