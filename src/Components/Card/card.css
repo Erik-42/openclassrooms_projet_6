@@ -1,25 +1,64 @@
-.cadreCard {
-    text-align: left;
-    width: 340px;
-    height: 340px;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    background-color: #FF6060;
-    margin: 50px;
-}
+ /* Desktop max:1600px */
+ .cadreCard {
+     position: relative;
+     width: 340px;
+     height: 340px;
+     border-radius: 10px;
+     background-color: #FF6060;
+     margin: 10%;
+     display: flex;
+     flex-direction: column-reverse;
+     justify-content: space-between;
+ }
 
-.coverImage {
-    display: flex;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
+ .cadreCard:hover {
+     opacity: 80%;
+ }
 
-.locationName {
-    font-size: 18px;
-    line-height: 142.6%;
-    display: flex;
-    align-items: flex-end;
-    color: #FFFFFF;
-    margin: 20px;
-    text-decoration: none;
-}
+ .locationName {
+     position: absolute;
+     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+     width: 100%;
+     height: 100%;
+     font-size: 18px;
+     color: #FFFFFF;
+     text-align: left;
+     display: flex;
+     align-items: flex-end;
+     padding: 20px;
+     text-decoration: none;
+ }
+
+ .coverImage {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 10px;
+ }
+
+
+ /* Desktop >1600px-1350px */
+ /* * {
+    max-width: 1600px
+} */
+
+ /* Tablette XL/Desktop XS 1350px-991px */
+ @media (max-width: 1350px) {}
+
+ /* Tablette 992px-767px */
+ @media (max-width: 992px) {
+     .cadreCard {
+         width: 335px;
+         height: 255px;
+         border-radius: 10px;
+         background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+         background-color: #FF6060;
+         margin: 10%;
+         display: flex;
+         flex-direction: column-reverse;
+         justify-content: space-between;
+     }
+ }
+
+ /* Mobile <768px */
+ @media (max-width: 768px) {}
