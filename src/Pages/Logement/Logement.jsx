@@ -18,8 +18,9 @@ const Logement = () => {
     const equipements = {
         id: dataLogement.id,
         title: "Equipements",
-        texte: (dataLogement.equipements) ? dataLogement.equipements.join(" ") : ""
+        texte: (dataLogement.equipments) ? dataLogement.equipments.join(" ") : ""
     }
+
     //affichage (render)
     return (
         <div className='ficheLogement'>

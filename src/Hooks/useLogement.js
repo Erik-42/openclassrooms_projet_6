@@ -11,8 +11,7 @@ function useLogement() {
         id: "",
         title: "",
         cover: "",
-        pictures: [
-        ],
+        pictures: [],
         description: "",
         host: {
             name: "",
@@ -20,12 +19,8 @@ function useLogement() {
         },
         rating: "",
         location: "",
-        equipments: [
-
-        ],
-        tags: [
-
-        ]
+        equipments: [],
+        tags: []
     })
 
     //Comportements

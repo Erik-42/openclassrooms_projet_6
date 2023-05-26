@@ -16,6 +16,7 @@ const Collapse = ({ data }) => {
         setHeightElement(`${content.current.scrollHeight}px`);
     }, []);
 
+
     //affichage (render)
     return (
         <div>
@@ -27,8 +28,8 @@ const Collapse = ({ data }) => {
                 </div>
                 <div className='containerCollapse'>
                     <div className={toggle ? "collapseToggle animated" : "collapseToggle"} ref={content} style={{ height: toggle ? `${heightElement}` : "0px" }}>
-                        <div className='contentTextCollapse' >
-                            <p className='textCollapse' aria-hidden={toggle ? "true" : "false"} key={"texte" + data.id}>{data.texte}</p>
+                        <div className='contentTextCollapse'>
+                            <p className='textCollapse ' aria-hidden={toggle ? "true" : "false"} key={"texte" + data.id} >{data.texte}</p>
                         </div>
                     </div>
                 </div>
