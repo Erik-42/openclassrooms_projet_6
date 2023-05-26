@@ -17,6 +17,6 @@ https://github.com/Erik-42/OpenClassRooms_Projet_6.git
 
 ## Testez le projet:
 
-https://erik-42.github.io/OpenClassRooms_Projet_6/public/
+https://erik-42.github.io/openclassrooms_projet_6/
 
-Formation OpenClassRoom developpeur web - Eric Breteau
+Formation OpenClassRoom developpeur web

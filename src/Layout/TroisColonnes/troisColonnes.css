@@ -1,4 +1,38 @@
 .troisColonnes {
-    display: flex;
-    flex-wrap: wrap;
+    background: #F7F7F7;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    justify-items: stretch;
+    margin: 40px 0;
+}
+
+/* Desktop >1600px-1350px */
+/* * {
+    max-width: 1600px
+} */
+
+/* Tablette XL/Desktop XS 1350px-991px */
+@media (max-width: 1250px) {
+    .troisColonnes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+/* Tablette 992px-767px */
+@media (max-width: 890px) {
+    .troisColonnes {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* justify-items: center; */
+        background: none;
+    }
+}
+
+/* Mobile <768px */
+@media (max-width: 768px) {
+    .troisColonnes {}
 }

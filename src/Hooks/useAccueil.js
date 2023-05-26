@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 const Datas = "/data/logements.json"
 
-function useLogement() {
+function useAccueil() {
     //state (état et données)
     const [data, setData] = useState([])
 
@@ -19,4 +19,4 @@ function useLogement() {
     return data
 }
 
-export default useLogement
+export default useAccueil

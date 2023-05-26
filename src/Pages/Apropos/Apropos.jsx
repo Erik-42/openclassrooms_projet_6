@@ -3,7 +3,6 @@ import useApropos from '../../Hooks/useApropos.js';
 import bannerAbout from '../../assets/banner/bannerAbout.webp'
 import Collapse from '../../Components/Collapse/Collapse.jsx'
 import "./apropos.css"
-// import aProposTexte from "../../assets/data/aProposTexte.json";
 
 const Apropos = () => {
     const texteApropos = useApropos()
@@ -19,8 +18,8 @@ const Apropos = () => {
                 <img className='banner' src={bannerAbout} alt="Bannière accueil" />
             </div>
             <div className='infosApropos'>
-                {texteApropos.map((texte, title) => (
-                    <Collapse title={title.aProposTitle} textes={texte.aProposText} ></Collapse>
+                {texteApropos.map((element) => (
+                    <Collapse key={element.id} data={element}></Collapse>
                 ))
                 }
             </div>
