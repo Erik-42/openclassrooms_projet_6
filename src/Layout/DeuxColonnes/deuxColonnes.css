@@ -1,12 +1,9 @@
 .deuxColonnes {
     display: flex;
-
-    background: #F7F7F7;
     border-radius: 25px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-    justify-items: stretch;
     margin: 40px 0;
 }
 

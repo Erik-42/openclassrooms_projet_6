@@ -12,7 +12,6 @@ const Rate = ({ rating }) => {
     //affichage (render)
     return (
         <div className='votes'>
-            {/* <button>{rating}</button> */}
             {stars.map((level) => rating >= level ?
                 (<img key={level.toString()} className='etoiles' src={redstar} alt="Etoiles de vote rouge" />) :
                 (<img key={level.toString()} className='etoiles' src={greystar} alt="Etoiles de vote grise" />)

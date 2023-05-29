@@ -24,28 +24,33 @@ const Logement = () => {
     //affichage (render)
     return (
         <div className='ficheLogement'>
-            <div className='galerie'>
+            <div className='galerieLogement'>
                 <Gallery pictures={dataLogement.pictures}></Gallery>
             </div>
-            <div className='qqocp' >
-                <div className='titreLogement'>{dataLogement.title}</div>
-                <div className='locationLogement'>{dataLogement.location}</div>
-                <div className='user'>
-                    <User></User>
+            <div className='qqocpLogement' >
+                <div className='titreUser'>
+                    <div>
+                        <div className='titreLogement'>{dataLogement.title}</div>
+                        <div className='locationLogement'>{dataLogement.location}</div>
+                    </div>
+                    <div className='userLogement'>
+                        <User></User>
+                    </div>
                 </div>
-                <div className='tags'>
-                    {dataLogement.tags.map((tag, index) =>
-                        <Tag key={index} tag={tag}></Tag>
+                <div className='tagsVotes'>
+                    <div className='tagsLogement'>
+                        {dataLogement.tags.map((tag, index) =>
+                            <Tag key={index} tag={tag}></Tag>
+                        )
+                        }
+                    </div>
+                    <div className="votesLogement">
+                        {/* {dataLogement.rating.map((rating, index) =>
+                        <Rate key={index} rating={rating}></Rate>
                     )
-                    }
-                </div>
-                <div className="votes">
-                    <h2>votes en étoiles</h2>
-                    {/* {dataLogement.rates.map((rating, index) =>
-                    <Rate key={index} rating={rating}></Rate>
-                )
-                } */}
-                    <Rate></Rate>
+                    } */}
+                        <Rate>{dataLogement.rating}</Rate>
+                    </div>
                 </div>
             </div>
             <div className='infosLogement'>

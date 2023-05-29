@@ -3,6 +3,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    margin: 10%;
 }
 
 .barreCollapse {
@@ -48,7 +49,6 @@
 }
 
 .contentTextCollapse {
-    background-color: #F7F7F7;
     border-radius: 10px;
     width: inherit;
 }
@@ -61,6 +61,7 @@
 }
 
 .textCollapse {
+    background-color: #F7F7F7;
     color: #FF6060;
     font-size: 12px;
     line-height: 142.6%;

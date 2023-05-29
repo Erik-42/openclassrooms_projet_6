@@ -4,14 +4,21 @@
     align-items: center; */
 }
 
-.galerie {
+.galerieLogement {
     display: flex;
     justify-content: center;
 }
 
-.qqocp {
+.qqocpLogement {
     display: flex;
     flex-direction: column;
+}
+
+.titreUser {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .titreLogement {
@@ -26,19 +33,25 @@
     align-items: flex-end;
 }
 
-.tags {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.user {
+.userLogement {
     font-size: 18px;
     display: flex;
     justify-content: flex-end;
 }
 
-.votes {
+.tagsLogement {
+    font-size: 14px;
+    display: flex;
+}
+
+.tagsVotes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.votesLogement {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -46,4 +59,6 @@
     color: #FF6060;
 }
 
-.infosLogement {}
+.infosLogement {
+    margin: 25px 0 50px;
+}

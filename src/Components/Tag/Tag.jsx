@@ -8,8 +8,8 @@ const Tag = ({ tag }) => {
 
     //affichage (render)
     return (
-        <div className="tags">
-            <button>{tag}</button>
+        <div className="tag">
+            <span className='texteTag'>{tag}</span>
         </div>
     )
 }
