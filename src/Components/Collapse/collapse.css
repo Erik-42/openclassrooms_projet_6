@@ -1,9 +1,10 @@
 .collapse {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     align-content: center;
-    margin: 10%;
+    align-items: stretch;
+    margin: 20px 0 20px 0;
 }
 
 .barreCollapse {
@@ -16,7 +17,7 @@
     color: white;
     border-radius: 10px;
     width: 100%;
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 
 .titreCollapse {
@@ -53,6 +54,8 @@
     width: inherit;
 }
 
+
+
 .collapseToggle {
     display: flex;
     justify-content: center;
@@ -61,10 +64,11 @@
 }
 
 .textCollapse {
+    text-align: initial;
     background-color: #F7F7F7;
+    border-radius: 10px;
     color: #FF6060;
-    font-size: 12px;
-    line-height: 142.6%;
+    font-size: 24px;
     display: flex;
     padding: 20px;
 }

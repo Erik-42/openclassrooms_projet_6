@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import vectorWhiteRight from '../../assets/logo/vectorWhiteRight.png'
-import vectorWhiteLeft from '../../assets/logo/vectorWhiteLeft.png'
+import vectorWhite from '../../assets/logo/Vector.svg'
 import "./gallery.css"
 
 const Gallery = ({ pictures }) => {
@@ -27,10 +26,10 @@ const Gallery = ({ pictures }) => {
     return (
         <div className="gallery">
             <img className='imageGallery' src={pictures[pictureIndex]} alt="logement" />
+            <div className='indexGallery'>{pictureIndex + 1}/{nombrePictures}</div>
             <div className='controlsGallery'>
-                <img className='previousVector' src={vectorWhiteLeft} alt="Previous" onClick={() => previousPicture()} />
-                <img className='nextVector' src={vectorWhiteRight} alt="Next" onClick={() => nextPicture()} />
-                <div className='indexGallery'>{pictureIndex + 1}/{nombrePictures}</div>
+                <img className='previousVector' src={vectorWhite} alt="Previous" onClick={() => previousPicture()} />
+                <img className='nextVector' src={vectorWhite} alt="Next" onClick={() => nextPicture()} />
             </div>
         </div>
     )

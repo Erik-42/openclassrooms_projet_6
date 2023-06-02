@@ -1,36 +1,47 @@
 .gallery {
     position: relative;
-    width: 1240px;
+    width: -webkit-fill-available;
     height: 415px;
     border-radius: 25px;
     background-color: #FF6060;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .controlsGallery {
     position: absolute;
-    /* background: radial-gradient(ellipse closest-side, white 50%, black 95%); */
-    font-size: 18px;
     width: 100%;
     height: 100%;
-    /* opacity: 20%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.previousVector {}
+.previousVector {
+    rotate: -90deg;
+}
 
-.nextVector {}
+.nextVector {
+    rotate: 90deg;
+}
 
-.indexGallery {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+.previousVector,
+.nextVector {
+    width: 10%;
 }
 
 .previousVector:hover,
 .nextVector:hover {
     opacity: 80%;
     box-shadow: inset;
+}
+
+.indexGallery {
+    position: absolute;
+    color: white;
+    margin: 25px;
+    font-size: 18px;
 }
 
 .imageGallery {

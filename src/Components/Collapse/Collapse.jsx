@@ -20,7 +20,6 @@ const Collapse = ({ data }) => {
     //affichage (render)
     return (
         <div>
-
             <section className='collapse' key={data.id} >
                 <div className="barreCollapse" onClick={toggleCollapse}>
                     <div className="titreCollapse" key={"title" + data.id}>{data.title}</div>
@@ -28,14 +27,14 @@ const Collapse = ({ data }) => {
                 </div>
                 <div className='containerCollapse'>
                     <div className={toggle ? "collapseToggle animated" : "collapseToggle"} ref={content} style={{ height: toggle ? `${heightElement}` : "0px" }}>
-                        <div className='contentTextCollapse'>
-                            <p className='textCollapse ' aria-hidden={toggle ? "true" : "false"} key={"texte" + data.id} >{data.texte}</p>
+                        <div className='contentTextCollapse' key={"texte" + data.id} aria-hidden={toggle ? "true" : "false"}>
+                            <p className='textCollapse ' key={"texte" + data.id} aria-hidden={toggle ? "true" : "false"}>{data.texte} </p>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
 
-        </div>
+        </div >
     )
 }
 export default Collapse;

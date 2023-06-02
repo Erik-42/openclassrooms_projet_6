@@ -1,16 +1,10 @@
+/* Desktop >1600px-1250px */
+
 .deuxColonnes {
     display: flex;
-    border-radius: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
-    margin: 40px 0;
+    justify-content: space-between;
 }
 
-/* Desktop >1600px-1350px */
-/* * {
-    max-width: 1600px
-} */
 
 /* Tablette XL/Desktop XS 1350px-991px */
 @media (max-width: 1250px) {
@@ -25,8 +19,6 @@
 @media (max-width: 890px) {
     .deuxColonnes {
         display: grid;
-        /* grid-template-columns: 1fr; */
-        /* justify-items: center; */
         background: none;
     }
 }
