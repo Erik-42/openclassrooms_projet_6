@@ -7,12 +7,12 @@ const Footer = () => {
 
     //affichage (render)
     return (
-        <div className="footer">
+        <footer>
             <Link to="/">
                 <img id="footerLogo" src={Logo} alt="Logo Kasa" />
             </Link>
             <p>©2020 Kasa. All rights reserved</p>
-        </div>
+        </footer>
     )
 }
 
