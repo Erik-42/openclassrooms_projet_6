@@ -11,17 +11,6 @@ import "./logement.css"
 const Logement = () => {
     const dataLogement = useLogement()
 
-    const description = {
-        id: dataLogement.id,
-        title: "description",
-        texte: dataLogement.description
-    }
-    const equipements = {
-        id: dataLogement.id,
-        title: "Equipements",
-        texte: (dataLogement.equipments) ? dataLogement.equipments.join(" ") : ""
-    }
-
     //affichage (render)
     return (
         <div className='ficheLogement'>
@@ -42,21 +31,19 @@ const Logement = () => {
                 </div>
                 <div className='hostRateLogement'>
                     <div className='userLogement'>
-                        <User></User>
+                        <User name={dataLogement.host.name} picture={dataLogement.host.picture}></User>
                     </div>
                     <div className="votesLogement">
-                        <Rate></Rate>
+                        <Rate note={dataLogement.rating}></Rate>
                     </div>
                 </div>
             </div>
             <div className='infosLogement'>
                 <div className='descriptionLogement'>
-                    <Collapse data={description}></Collapse>
+                    <Collapse data={dataLogement.description} title="description"></Collapse>
                 </div>
                 <div className='equipementsLogement'>
-                    <Collapse data={equipements}>
-
-                        <li></li>
+                    <Collapse data={dataLogement.equipments} title="equipements">
 
                     </Collapse>
                 </div>

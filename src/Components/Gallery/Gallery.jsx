@@ -27,10 +27,10 @@ const Gallery = ({ pictures }) => {
         <div className="gallery">
             <img className='imageGallery' src={pictures[pictureIndex]} alt="logement" />
             <div className='indexGallery'>{pictureIndex + 1}/{nombrePictures}</div>
-            <div className='controlsGallery'>
+            {nombrePictures > 1 && <div className='controlsGallery'>
                 <img className='previousVector' src={vectorWhite} alt="Previous" onClick={() => previousPicture()} />
                 <img className='nextVector' src={vectorWhite} alt="Next" onClick={() => nextPicture()} />
-            </div>
+            </div>}
         </div>
     )
 }

@@ -3,7 +3,7 @@ import "./rate.css"
 import redstar from "../../assets/logo/redStar.png"
 import greystar from "../../assets/logo/greyStar.png"
 
-const Rate = ({ rating }) => {
+const Rate = ({ note }) => {
     //state (état et données)
     const stars = [1, 2, 3, 4, 5];
 
@@ -12,7 +12,7 @@ const Rate = ({ rating }) => {
     //affichage (render)
     return (
         <div className='votes'>
-            {stars.map((level) => rating >= level ?
+            {stars.map((level) => note >= level ?
                 (<img key={level.toString()} className='etoiles' src={redstar} alt="Etoiles de vote rouge" />) :
                 (<img key={level.toString()} className='etoiles' src={greystar} alt="Etoiles de vote grise" />)
             )}

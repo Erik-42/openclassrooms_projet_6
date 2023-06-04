@@ -30,6 +30,10 @@ a {
     color: #FFFFFF;
 }
 
+.greySquare {
+    width: 100%;
+}
+
 /* Desktop >1600px-1350px */
 /* * {
     max-width: 1600px

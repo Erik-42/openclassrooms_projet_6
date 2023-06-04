@@ -2,9 +2,11 @@
     background: #F7F7F7;
     border-radius: 25px;
     display: grid;
+    align-items: center;
+    grid-auto-rows: 400px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
-    justify-items: stretch;
+    justify-items: center;
     margin: 40px 0;
 }
 

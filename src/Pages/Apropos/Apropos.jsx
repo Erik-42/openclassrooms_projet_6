@@ -19,7 +19,7 @@ const Apropos = () => {
             </div>
             <div className='infosApropos'>
                 {texteApropos.map((element) => (
-                    <Collapse key={element.id} data={element}></Collapse>
+                    <Collapse key={element.id} data={element.texte} title={element.title}></Collapse>
                 ))
                 }
             </div>
