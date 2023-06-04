@@ -78,6 +78,13 @@
 
 .equipementsLogement {
     width: 45%;
+    text-align: left;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* Tablette XL/Desktop XS 1350px-991px */

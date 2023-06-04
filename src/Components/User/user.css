@@ -17,3 +17,9 @@
     color: #FF6060;
     font-size: 18px;
 }
+
+/* Tablette  */
+@media (max-width: 992px) {}
+
+/* Mobile  */
+@media (max-width: 768px) {}

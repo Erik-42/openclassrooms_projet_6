@@ -1,7 +1,7 @@
 import React from 'react';
 import "./rate.css"
-import redstar from "../../assets/logo/redStar.png"
-import greystar from "../../assets/logo/greyStar.png"
+import redstar from "../../assets/logo/star_rate-24px 5 red.svg"
+import greystar from "../../assets/logo/star_rate-24px 2 grey.svg"
 
 const Rate = ({ note }) => {
     //state (état et données)

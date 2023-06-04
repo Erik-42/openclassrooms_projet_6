@@ -2,9 +2,6 @@ import React from 'react'
 import "./tag.css"
 
 const Tag = ({ tag }) => {
-    //state (état et données)
-
-    //Comportements
 
     //affichage (render)
     return (
