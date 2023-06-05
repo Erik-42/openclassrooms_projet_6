@@ -5,7 +5,6 @@
      height: 340px;
      border-radius: 10px;
      background-color: #FF6060;
-     margin: 10%;
      display: flex;
      flex-direction: column-reverse;
      justify-content: space-between;
@@ -15,8 +14,16 @@
      opacity: 80%;
  }
 
+ .coverImage {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 10px;
+ }
+
  .locationName {
      position: absolute;
+     border-radius: 10px;
      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
      width: 100%;
      height: 100%;
@@ -29,36 +36,16 @@
      text-decoration: none;
  }
 
- .coverImage {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     border-radius: 10px;
- }
-
-
- /* Desktop >1600px-1350px */
- /* * {
-    max-width: 1600px
-} */
-
- /* Tablette XL/Desktop XS 1350px-991px */
- @media (max-width: 1350px) {}
-
- /* Tablette 992px-767px */
- @media (max-width: 992px) {
+ /* Mobile <768px */
+ @media (max-width: 768px) {
      .cadreCard {
          width: 335px;
          height: 255px;
          border-radius: 10px;
          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
          background-color: #FF6060;
-         margin: 10%;
          display: flex;
          flex-direction: column-reverse;
          justify-content: space-between;
      }
  }
-
- /* Mobile <768px */
- @media (max-width: 768px) {}

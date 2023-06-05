@@ -1,9 +1,8 @@
-.tags {
-    width: 115px;
+.tag {
+    width: auto;
     height: 25px;
     border-radius: 10px;
     background-color: #FF6060;
-    color: white;
     text-align: center;
     font-size: 14px;
     list-style: none;
@@ -11,4 +10,17 @@
     align-items: center;
     margin-right: 10px;
     padding: 3px 20px 3px 20px;
+}
+
+.texteTag {
+    color: white;
+}
+
+/* Mobile  */
+@media (max-width: 768px) {
+    .tag {
+        height: 18px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
 }

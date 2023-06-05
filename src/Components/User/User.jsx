@@ -1,19 +1,15 @@
 import React from 'react';
 import "./user.css"
-import imageProfil from "../../assets/logo/ImageProfil.png"
 
-const User = () => {
-    //state (état et données)
-
-    //Comportements
+const Host = ({ name, picture }) => {
 
     //affichage (render)
     return (
-        <div id="profilUser">
-            <p>Alexandre Dumas</p>
-            <img id="photoUser" src={imageProfil} alt="Photo profil utilisateur" />
+        <div className="profilHost">
+            <p className='nameHost'>{name}</p>
+            <img className="photoHost" src={picture} alt="Profil utilisateur" />
         </div>
     );
 };
 
-export default User;
+export default Host;

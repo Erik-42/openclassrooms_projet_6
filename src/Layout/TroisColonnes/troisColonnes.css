@@ -1,20 +1,18 @@
+/* Desktop >1600px-1150px */
 .troisColonnes {
     background: #F7F7F7;
     border-radius: 25px;
     display: grid;
+    align-items: center;
+    grid-auto-rows: 400px;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
-    justify-items: stretch;
+    justify-items: center;
     margin: 40px 0;
 }
 
-/* Desktop >1600px-1350px */
-/* * {
-    max-width: 1600px
-} */
-
-/* Tablette XL/Desktop XS 1350px-991px */
-@media (max-width: 1250px) {
+/* Tablette XL/Desktop XS 1150px-768px */
+@media (max-width: 1150px) {
     .troisColonnes {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -22,17 +20,13 @@
     }
 }
 
-/* Tablette 992px-767px */
-@media (max-width: 890px) {
+/* Mobile <768px */
+@media (max-width: 768px) {
     .troisColonnes {
         display: grid;
         grid-template-columns: 1fr;
-        /* justify-items: center; */
         background: none;
+        grid-auto-rows: 290px;
+        margin: 20px 0;
     }
-}
-
-/* Mobile <768px */
-@media (max-width: 768px) {
-    .troisColonnes {}
 }

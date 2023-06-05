@@ -3,16 +3,22 @@ main {
     background-color: white;
 }
 
-a {
-    text-decoration: none;
-}
-
 #bannerHome {
     background: rgb(0, 0, 0);
     border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#titleBanner {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    z-index: +1;
+    position: absolute;
+    font-size: 48px;
+    color: #FFFFFF;
 }
 
 .banner {
@@ -23,36 +29,23 @@ a {
     opacity: 0.8;
 }
 
-#titleBanner {
-    z-index: +1;
-    position: absolute;
-    font-size: 48px;
-    color: #FFFFFF;
-}
-
-/* Desktop >1600px-1350px */
-/* * {
-    max-width: 1600px
-} */
-
-/* Tablette XL/Desktop XS 1350px-991px */
-@media (max-width: 1350px) {}
-
-/* Tablette 992px-767px */
-@media (max-width: 992px) {
-    #titleBanner {
-        font-size: 24px;
-        line-height: 100%;
-    }
+.greySquare {
+    width: 100%;
 }
 
 /* Mobile <768px */
 @media (max-width: 768px) {
+
     #bannerHome {
         display: flex;
         align-items: center;
         min-width: 335px;
         min-height: 111px;
+    }
+
+    #titleBanner {
+        font-size: 24px;
+        line-height: 100%;
     }
 
     .banner {

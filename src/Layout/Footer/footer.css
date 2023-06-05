@@ -1,17 +1,23 @@
-.footer {
+footer {
+    display: flex;
+    flex-direction: column;
     background-color: black;
     color: white;
     font-size: 24px;
     padding: 40px 0px 5px;
-    margin: 40px 0px 5px;
 }
 
-#footer-logo {
-    width: 122px;
-    height: 40px;
-
+#footerLogo {
+    width: 15%;
 }
 
 p {
     color: white;
+}
+
+/* Mobile <768px */
+@media (max-width: 768px) {
+    p {
+        font-size: 12px;
+    }
 }

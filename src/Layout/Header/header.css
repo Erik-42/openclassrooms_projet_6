@@ -1,8 +1,8 @@
+/* Desktop >1600px-1350px */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin: 0% 6% 2% 5%; */
 }
 
 #headerLogo {
@@ -15,7 +15,7 @@ nav {
 }
 
 .navLink {
-    color: #FF6060;
+
     text-decoration: none;
     padding: 5px;
 }
@@ -23,17 +23,6 @@ nav {
 .navLink:hover {
     text-decoration: underline;
 }
-
-/* Desktop >1600px-1350px */
-/* * {
-    max-width: 1600px
-} */
-
-/* Tablette XL/Desktop XS 1350px-991px */
-@media (max-width: 1350px) {}
-
-/* Tablette 992px-767px */
-@media (max-width: 992px) {}
 
 /* Mobile <768px */
 @media (max-width: 768px) {
