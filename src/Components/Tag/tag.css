@@ -16,9 +16,6 @@
     color: white;
 }
 
-/* Tablette  */
-@media (max-width: 992px) {}
-
 /* Mobile  */
 @media (max-width: 768px) {
     .tag {

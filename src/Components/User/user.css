@@ -1,9 +1,3 @@
-.photoHost {
-    background: #C4C4C4;
-    width: 64px;
-    border-radius: 50%;
-}
-
 .profilHost {
     display: flex;
     align-items: center;
@@ -18,8 +12,8 @@
     font-size: 18px;
 }
 
-/* Tablette  */
-@media (max-width: 992px) {}
-
-/* Mobile  */
-@media (max-width: 768px) {}
+.photoHost {
+    background: #C4C4C4;
+    width: 64px;
+    border-radius: 50%;
+}

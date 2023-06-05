@@ -1,5 +1,3 @@
-//import Logo from './Logos/logo.svg';
-import './Style/App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Layout/Header/Header.jsx';
 import Footer from './Layout/Footer/Footer.jsx';
@@ -7,6 +5,7 @@ import Accueil from './Pages/Accueil/Accueil.jsx';
 import Logement from './Pages/Logement/Logement.jsx';
 import Apropos from './Pages/Apropos/Apropos.jsx';
 import Error404 from './Pages/Error404/Error404.jsx';
+import './Style/App.css';
 
 function App() {
   return (

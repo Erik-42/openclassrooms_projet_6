@@ -1,5 +1,4 @@
 import React from 'react'
-// import DeuxColonnes from '../../Layout/DeuxColonnes/DeuxColonnes.jsx'
 import Gallery from '../../Components/Gallery/Gallery.jsx'
 import Tag from '../../Components/Tag/Tag.jsx'
 import User from '../../Components/User/User.jsx'
@@ -13,7 +12,7 @@ const Logement = () => {
 
     //affichage (render)
     return (
-        <div className='ficheLogement'>
+        <div >
             <div className='galerieLogement'>
                 <Gallery pictures={dataLogement.pictures}></Gallery>
             </div>

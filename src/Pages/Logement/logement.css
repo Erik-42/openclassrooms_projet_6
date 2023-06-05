@@ -1,11 +1,8 @@
-/* Desktop >1600px-1350px */
-
-.ficheLogement {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+ul {
+    list-style-type: none;
 }
 
+/* Desktop >1600px-1350px */
 .galerieLogement {
     display: flex;
     justify-content: center;
@@ -23,13 +20,6 @@
     justify-content: space-evenly;
 }
 
-.hostRateLogement {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
 .titreLogement {
     width: 100%;
     font-size: 36px;
@@ -42,20 +32,20 @@
     justify-content: flex-start;
 }
 
-.userLogement {
-    font-size: 18px;
-}
-
 .tagsLogement {
     font-size: 14px;
     display: flex;
 }
 
-.tagsVotes {
-    position: relative;
+.hostRateLogement {
+    width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.userLogement {
+    font-size: 18px;
 }
 
 .votesLogement {
@@ -83,12 +73,23 @@
     text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
-}
-
 /* Tablette XL/Desktop XS 1350px-991px */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
+    .titreLogement {
+        font-size: 18px;
+    }
+
+    .userLogement {
+        font-size: 18px;
+    }
+
+    .tagsVotes {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .infosLogement {
         display: flex;
         margin: 25px 0 50px;
@@ -109,20 +110,3 @@ ul {
         justify-content: space-between;
     }
 }
-
-/* Tablette 992px-767px */
-@media (max-width: 992px) {
-    .userLogement {
-        font-size: 18px;
-    }
-
-    .tagsVotes {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-
-/* Mobile <768px */
-@media (max-width: 768px) {}

@@ -7,8 +7,8 @@ footer {
     padding: 40px 0px 5px;
 }
 
-#footer-logo {
-    width: 100%;
+#footerLogo {
+    width: 15%;
 }
 
 p {
@@ -17,10 +17,6 @@ p {
 
 /* Mobile <768px */
 @media (max-width: 768px) {
-    #footer-logo {
-        width: 75%;
-    }
-
     p {
         font-size: 12px;
     }

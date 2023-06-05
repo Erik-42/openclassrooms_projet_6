@@ -1,4 +1,4 @@
-/* Desktop >1600px-1350px */
+/* Desktop >1600px-1150px */
 .troisColonnes {
     background: #F7F7F7;
     border-radius: 25px;
@@ -11,7 +11,7 @@
     margin: 40px 0;
 }
 
-/* Tablette XL/Desktop XS 1350px-991px */
+/* Tablette XL/Desktop XS 1150px-768px */
 @media (max-width: 1150px) {
     .troisColonnes {
         display: grid;
