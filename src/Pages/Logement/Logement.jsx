@@ -12,7 +12,7 @@ const Logement = () => {
 
     //affichage (render)
     return (
-        <div >
+        <div className='ficheLogement'>
             <div className='galerieLogement'>
                 <Gallery pictures={dataLogement.pictures}></Gallery>
             </div>

@@ -3,6 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 5%;
 }
 
 #headerLogo {
@@ -15,13 +16,26 @@ nav {
 }
 
 .navLink {
-
     text-decoration: none;
-    padding: 5px;
+    margin: 5px;
+    position: relative;
 }
 
-.navLink:hover {
-    text-decoration: underline;
+.navLink::before {
+    content: "";
+    position: absolute;
+    background: #FF6060;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scale(0);
+    transition: transform 0.4s;
+}
+
+.navLink:hover::before {
+    transform-origin: 0 0;
+    transform: scale(1);
 }
 
 /* Mobile <768px */

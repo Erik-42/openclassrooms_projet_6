@@ -1,14 +1,11 @@
 /* Desktop max 1600px - 991px */
-main {
-    background-color: white;
-}
-
 #bannerHome {
     background: rgb(0, 0, 0);
     border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 5%;
 }
 
 #titleBanner {
@@ -30,7 +27,7 @@ main {
 }
 
 .greySquare {
-    width: 100%;
+    margin: 0 5%;
 }
 
 /* Mobile <768px */

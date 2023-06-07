@@ -3,6 +3,10 @@ ul {
 }
 
 /* Desktop >1600px-1350px */
+.ficheLogement {
+    margin: 5%;
+}
+
 .galerieLogement {
     display: flex;
     justify-content: center;
@@ -59,7 +63,7 @@ ul {
 .infosLogement {
     display: flex;
     justify-content: space-between;
-    margin: 25px 0 50px;
+    margin: 0 0 5% 0;
 }
 
 .descriptionLogement {

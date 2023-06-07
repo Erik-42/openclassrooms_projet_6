@@ -2,7 +2,7 @@
   "name": "openclassrooms_projet_6-1",
   "version": "0.1.0",
   "private": true,
-  "hompage":"https://erik-42.github.io/OpenClassRooms_Projet_6",
+  "hompage": "https://erik-42.github.io/OpenClassRooms_Projet_6",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -19,6 +19,7 @@
     "react-scripts": "5.0.1",
     "react-testing-library": "^8.0.1",
     "rest": "^2.0.0",
+    "sass": "^1.62.1",
     "style": "^0.0.3",
     "styled": "^1.0.0",
     "typescript": "^5.0.4",
@@ -29,8 +30,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"yarn run build",
-    "deploy":"gh-pages -d build"
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
