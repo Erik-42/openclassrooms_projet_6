@@ -1,12 +1,12 @@
 import React from 'react'
-import "./tag.css"
+import styled from "./tag.module.scss"
 
 const Tag = ({ tag }) => {
 
     //affichage (render)
     return (
-        <div className="tag">
-            <span className='texteTag'>{tag}</span>
+        <div className={styled.tag}>
+            <span className={styled.texteTag}>{tag}</span>
         </div>
     )
 }

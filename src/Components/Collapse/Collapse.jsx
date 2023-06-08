@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import vectorWhiteUp from '../../assets/logo/Vector.svg'
-import "./collapse.css"
+import "./collapse.scss"
 
 const Collapse = ({ data, title }) => {
     //state (état et données)
@@ -12,7 +12,7 @@ const Collapse = ({ data, title }) => {
     //affichage (render)
     return (
         <div>
-            <section className='collapse'  >
+            <div className="collapse"  >
                 <div className="barreCollapse" onClick={toggleCollapse}>
                     <div className="titreCollapse" >{title}</div>
                     <img className={toggle ? "vector rotation" : "vector"} src={vectorWhiteUp} alt="Déployer / Réduire" />
@@ -22,11 +22,11 @@ const Collapse = ({ data, title }) => {
                         <div className="collapseToggle animated" >
                             {Array.isArray(data) ?
                                 <ul> {data.map((elm, key) => <li key={key}>{elm}</li>)}</ul> :
-                                <p className='textCollapse '>{data} </p>
+                                <p className="textCollapse">{data} </p>
                             }
                         </div>}
                 </div>
-            </section >
+            </div >
 
         </div >
     )

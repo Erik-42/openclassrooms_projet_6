@@ -1,12 +1,11 @@
-ul {
-    list-style-type: none;
+.ficheLogement {
+    margin: 1% 5% 0;
 }
 
-/* Desktop >1600px-1350px */
 .galerieLogement {
     display: flex;
     justify-content: center;
-    margin: 0 0 24px;
+    margin: 0 0 1%;
 }
 
 .qqocpLogement {
@@ -17,7 +16,7 @@ ul {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .titreLogement {
@@ -28,13 +27,14 @@ ul {
 
 .locationLogement {
     font-size: 18px;
-    display: flex;
-    justify-content: flex-start;
+    text-align: left;
+    margin: -3% 0 0;
 }
 
 .tagsLogement {
     font-size: 14px;
     display: flex;
+    justify-content: flex-start;
 }
 
 .hostRateLogement {
@@ -48,18 +48,11 @@ ul {
     font-size: 18px;
 }
 
-.votesLogement {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-size: 12px;
-    color: #FF6060;
-}
-
 .infosLogement {
     display: flex;
     justify-content: space-between;
-    margin: 25px 0 50px;
+    margin: 2% 0 5%;
+    gap: 20px;
 }
 
 .descriptionLogement {
@@ -73,7 +66,6 @@ ul {
     text-decoration: none;
 }
 
-/* Tablette XL/Desktop XS 1350px-991px */
 @media (max-width: 768px) {
     .titreLogement {
         font-size: 18px;
@@ -81,6 +73,15 @@ ul {
 
     .userLogement {
         font-size: 18px;
+    }
+
+    .descriptionLogement {
+        width: 100%;
+    }
+
+    .equipementsLogement {
+        width: 100%;
+
     }
 
     .tagsVotes {

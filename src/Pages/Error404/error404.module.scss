@@ -1,30 +1,29 @@
-#error404 {
+.error404 {
     font-size: 288px;
     font-weight: 700;
-    line-height: 410px;
-    color: #FF6060;
-    margin: 0;
 }
 
-#textError {
+.textError {
     font-size: 36px;
     line-height: 51px;
-    color: #FF6060;
+    margin: 20px;
 }
 
-#errorLink {
+.errorLink {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 18px;
     line-height: 25px;
-    color: #FF6060;
 }
 
-#errorLink :hover {
+.errorLink :hover {
     text-decoration: underline;
 }
 
-/* Tablette 992px-767px */
 @media (max-width: 992px) {
-    #error404 {
+    .error404 {
         font-size: 96px;
     }
 }

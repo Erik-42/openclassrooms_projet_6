@@ -1,9 +1,9 @@
 import React from 'react'
-import "./troisColonnes.css"
+import styled from "./troisColonnes.module.scss"
 
 function TroisColonnes({ children }) {
     return (
-        <article className="troisColonnes">
+        <article className={styled.troisColonnes} >
             {children}
         </article >
     )

@@ -5,7 +5,6 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: stretch;
-    margin: 20px 0 20px 0;
 }
 
 .barreCollapse {
@@ -32,14 +31,13 @@
 .vector {
     width: 30px;
     transform: rotate(0deg);
-    transition: 0.4s 0.4s ease-in-out;
+    transition: 0.4s 0.1s ease-in-out;
 }
 
 .rotation {
     transform: rotate(180deg);
     transition: 0.4s ease-in-out;
 }
-
 
 .collapseToggle {
     display: flex;

@@ -5,43 +5,43 @@ import User from '../../Components/User/User.jsx'
 import Rate from '../../Components/Rate/Rate.jsx'
 import Collapse from '../../Components/Collapse/Collapse.jsx'
 import useLogement from "../../Hooks/useLogement.js"
-import "./logement.css"
+import styled from "./logement.module.scss"
 
 const Logement = () => {
     const dataLogement = useLogement()
 
     //affichage (render)
     return (
-        <div >
-            <div className='galerieLogement'>
+        <div className={styled.ficheLogement} >
+            <div className={styled.galerieLogement}>
                 <Gallery pictures={dataLogement.pictures}></Gallery>
             </div>
-            <div className='qqocpLogement' >
+            <div className={styled.qqocpLogement} >
 
-                <div className='infosBaseLogement'>
-                    <div className='titreLogement'>{dataLogement.title}</div>
-                    <div className='locationLogement'>{dataLogement.location}</div>
-                    <div className='tagsLogement'>
+                <div className={styled.infosBaseLogement}>
+                    <h3 className={styled.titreLogement}>{dataLogement.title}</h3>
+                    <p className={styled.locationLogement}>{dataLogement.location}</p>
+                    <div className={styled.tagsLogement}>
                         {dataLogement.tags.map((tag, index) =>
                             <Tag key={index} tag={tag}></Tag>
                         )
                         }
                     </div>
                 </div>
-                <div className='hostRateLogement'>
-                    <div className='userLogement'>
+                <div className={styled.hostRateLogement}>
+                    <div className={styled.userLogement}>
                         <User name={dataLogement.host.name} picture={dataLogement.host.picture}></User>
                     </div>
-                    <div className="votesLogement">
+                    <div className={styled.votesLogement}>
                         <Rate note={dataLogement.rating}></Rate>
                     </div>
                 </div>
             </div>
-            <div className='infosLogement'>
-                <div className='descriptionLogement'>
+            <div className={styled.infosLogement}>
+                <div className={styled.descriptionLogement}>
                     <Collapse data={dataLogement.description} title="description"></Collapse>
                 </div>
-                <div className='equipementsLogement'>
+                <div className={styled.equipementsLogement}>
                     <Collapse data={dataLogement.equipments} title="equipements">
 
                     </Collapse>

@@ -1,4 +1,3 @@
-/* Desktop  */
 .gallery {
     position: relative;
     width: 100%;
@@ -55,14 +54,12 @@
     opacity: 80%;
 }
 
-/* Tablette  */
 @media (max-width: 992px) {
     .etoiles {
         width: 24px;
     }
 }
 
-/* Mobile  */
 @media (max-width: 768px) {
     .gallery {
         height: 255px;

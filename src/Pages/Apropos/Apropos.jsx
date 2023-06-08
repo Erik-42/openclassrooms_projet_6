@@ -2,7 +2,7 @@ import React from 'react'
 import useApropos from '../../Hooks/useApropos.js';
 import Collapse from '../../Components/Collapse/Collapse.jsx'
 import bannerAbout from '../../assets/banner/bannerAbout.webp'
-import "./apropos.css"
+import styled from "./apropos.module.scss"
 
 const Apropos = () => {
     const texteApropos = useApropos()
@@ -10,10 +10,10 @@ const Apropos = () => {
     //affichage (render)
     return (
         <main>
-            <div id="bannerAbout">
-                <img className='banner' src={bannerAbout} alt="Bannière accueil" />
+            <div className={styled.bannerAbout}>
+                <img className={styled.banner} src={bannerAbout} alt="Bannière A propos" />
             </div>
-            <div className='infosApropos'>
+            <div className={styled.infosApropos}>
                 {texteApropos.map((element) => (
                     <Collapse key={element.id} data={element.texte} title={element.title}></Collapse>
                 ))

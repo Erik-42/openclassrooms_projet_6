@@ -5,11 +5,11 @@ import Accueil from './Pages/Accueil/Accueil.jsx';
 import Logement from './Pages/Logement/Logement.jsx';
 import Apropos from './Pages/Apropos/Apropos.jsx';
 import Error404 from './Pages/Error404/Error404.jsx';
-import './Style/App.css';
+import './Style/App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <div className='app'>
       <BrowserRouter>
         <Header />
         <Routes>
