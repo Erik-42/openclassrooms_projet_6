@@ -19,8 +19,8 @@ const Logement = () => {
             <div className='qqocpLogement' >
 
                 <div className='infosBaseLogement'>
-                    <div className='titreLogement'>{dataLogement.title}</div>
-                    <div className='locationLogement'>{dataLogement.location}</div>
+                    <h3 className='titreLogement'>{dataLogement.title}</h3>
+                    <p className='locationLogement'>{dataLogement.location}</p>
                     <div className='tagsLogement'>
                         {dataLogement.tags.map((tag, index) =>
                             <Tag key={index} tag={tag}></Tag>

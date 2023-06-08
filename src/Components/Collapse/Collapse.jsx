@@ -12,7 +12,7 @@ const Collapse = ({ data, title }) => {
     //affichage (render)
     return (
         <div>
-            <section className='collapse'  >
+            <div className='collapse'  >
                 <div className="barreCollapse" onClick={toggleCollapse}>
                     <div className="titreCollapse" >{title}</div>
                     <img className={toggle ? "vector rotation" : "vector"} src={vectorWhiteUp} alt="Déployer / Réduire" />
@@ -26,7 +26,7 @@ const Collapse = ({ data, title }) => {
                             }
                         </div>}
                 </div>
-            </section >
+            </div >
 
         </div >
     )
