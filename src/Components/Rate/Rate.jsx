@@ -1,7 +1,7 @@
 import React from 'react';
 import redstar from "../../assets/logo/star_rate-24px 5 red.svg"
 import greystar from "../../assets/logo/star_rate-24px 2 grey.svg"
-import "./rate.css"
+import styled from "./rate.module.scss"
 
 const Rate = ({ note }) => {
     //state (état et données)
@@ -9,10 +9,10 @@ const Rate = ({ note }) => {
 
     //affichage (render)
     return (
-        <div className='votes'>
+        <div className={styled.votes}>
             {stars.map((level) => note >= level ?
-                (<img key={level.toString()} className='etoiles' src={redstar} alt="Etoiles de vote rouge" />) :
-                (<img key={level.toString()} className='etoiles' src={greystar} alt="Etoiles de vote grise" />)
+                (<img key={level.toString()} className={styled.etoiles} src={redstar} alt="Etoiles de vote rouge" />) :
+                (<img key={level.toString()} className={styled.etoiles} src={greystar} alt="Etoiles de vote grise" />)
             )}
         </div>
     );

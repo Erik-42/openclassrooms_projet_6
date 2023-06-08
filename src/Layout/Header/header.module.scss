@@ -1,17 +1,17 @@
 /* Desktop >1600px-1350px */
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 5%;
 }
 
-#headerLogo {
+.headerLogo {
     width: 100%;
     padding: 20px;
 }
 
-nav {
+.nav {
     font-size: 24px;
 }
 

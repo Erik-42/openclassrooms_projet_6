@@ -1,5 +1,5 @@
 import React from 'react'
-import "./troisColonnes.css"
+import "./troisColonnes.scss"
 
 function TroisColonnes({ children }) {
     return (

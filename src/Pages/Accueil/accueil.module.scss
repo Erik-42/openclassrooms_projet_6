@@ -1,14 +1,14 @@
 /* Desktop max 1600px - 991px */
-#bannerHome {
-    background: rgb(0, 0, 0);
-    border-radius: 25px;
+.bannerHome {
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgb(0, 0, 0);
+    border-radius: 25px;
     margin: 0 5%;
 }
 
-#titleBanner {
+.titleBanner {
     text-align: left;
     display: flex;
     justify-content: space-around;

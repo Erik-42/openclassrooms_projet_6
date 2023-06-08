@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import "./card.css"
+import styled from "./card.module.scss"
+
 
 const Card = ({ data }) => {
 
@@ -8,12 +9,12 @@ const Card = ({ data }) => {
     return (
         <div>
             <Link to={`/Logement/${data.id}`}>
-                <article className='cadreCard' key={data.id}>
-                    <img className='coverImage' key={"cover" + data.id} src={data.cover} alt={data.title} />
-                    <h2 className='locationName' key={"title" + data.id}>{data.title}</h2>
+                <article className={styled.cadreCard} key={data.id}>
+                    <img className={styled.coverImage} key={"cover" + data.id} src={data.cover} alt={data.title} />
+                    <h2 className={styled.locationName} key={"title" + data.id}>{data.title}</h2>
                 </article>
             </Link>
-        </div>
+        </div >
     )
 }
 

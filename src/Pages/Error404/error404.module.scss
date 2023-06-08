@@ -1,15 +1,15 @@
-#error404 {
+.error404 {
     font-size: 288px;
     font-weight: 700;
 }
 
-#textError {
+.textError {
     font-size: 36px;
     line-height: 51px;
     margin: 20px;
 }
 
-#errorLink {
+.errorLink {
     height: 280px;
     display: flex;
     justify-content: center;
@@ -18,13 +18,13 @@
     line-height: 25px;
 }
 
-#errorLink :hover {
+.errorLink :hover {
     text-decoration: underline;
 }
 
 /* Tablette 992px-767px */
 @media (max-width: 992px) {
-    #error404 {
+    .error404 {
         font-size: 96px;
     }
 }
