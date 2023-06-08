@@ -407,7 +407,7 @@ FodyWeavers.xsd
 /coverage
 
 # production
-#/build
+/build
 
 # misc
 yarn.lock
@@ -452,7 +452,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-#build/
+build/
 develop-eggs/
 dist/
 downloads/
