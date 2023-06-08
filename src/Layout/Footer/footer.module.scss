@@ -1,18 +1,21 @@
-footer {
-    display: flex;
-    flex-direction: column;
+.footer {
     background-color: black;
     color: white;
     font-size: 24px;
-    padding: 40px 0px 5px;
 }
 
-#footerLogo {
+.footerLogo {
     width: 15%;
 }
 
-footer p {
+.footer p {
     color: white;
+    margin-top: 30px;
+}
+
+.pied {
+    display: table-cell;
+    padding: 40px 0 5px;
 }
 
 /* Mobile <768px */

@@ -57,6 +57,7 @@ ul {
     display: flex;
     justify-content: space-between;
     margin: 2% 0 5%;
+    gap: 20px;
 }
 
 .descriptionLogement {
@@ -78,6 +79,15 @@ ul {
 
     .userLogement {
         font-size: 18px;
+    }
+
+    .descriptionLogement {
+        width: 100%;
+    }
+
+    .equipementsLogement {
+        width: 100%;
+
     }
 
     .tagsVotes {
